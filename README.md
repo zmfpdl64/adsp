@@ -60,13 +60,16 @@
 ## 🚀 GitHub Pages 배포
 
 ### 배포 URL
+
 **https://zmfpdl64.github.io/adsp/**
 
 ### 배포 방식
+
 - **Branch 기반 배포** (gh-pages 브랜치 사용)
 - 무료, 별도 설정 불필요
 
 ### GitHub Pages 설정 방법
+
 1. https://github.com/zmfpdl64/adsp/settings/pages 접속
 2. **Build and deployment** 섹션:
    - **Source**: `Deploy from a branch` 선택
@@ -74,6 +77,7 @@
 3. **Save** 클릭
 
 ### 코드 수정 후 재배포 방법
+
 ```bash
 # 1. gh-pages 브랜치로 이동
 git checkout gh-pages
@@ -89,6 +93,7 @@ git checkout main
 ```
 
 ### 프로젝트 구조
+
 ```
 ├── index.html      # 메인 페이지
 ├── app.js          # 앱 로직
@@ -98,4 +103,8 @@ git checkout main
 │   └── quizzes.js  # 퀴즈 데이터
 ├── .gitignore      # Git 제외 파일
 └── README.md       # 문서
+```
+
+```bash
+git checkout gh-pages && git checkout main -- . && git add -A && git commit -m "Update deployment" && git push && git checkout main
 ```
